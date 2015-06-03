@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMPlayViewController">
+            <connections>
+                <outlet property="albumCover" destination="qlm-om-gmZ" id="9ed-G3-C3Q"/>
+                <outlet property="albumStencil" destination="7oD-TA-2b6" id="0gg-ch-GBG"/>
+                <outlet property="chanelName" destination="Htd-oH-Y4m" id="olS-8L-FEO"/>
+                <outlet property="likeButton" destination="d5w-sx-Zkk" id="KnK-sf-V2b"/>
+                <outlet property="singerName" destination="kz2-Af-ceh" id="lc6-Cg-ubs"/>
+                <outlet property="songName" destination="pDp-ew-TOw" id="1Y5-2m-Ceg"/>
+                <outlet property="timerProgress" destination="zdp-oW-Fe0" id="Zwf-pc-ZcD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qlm-om-gmZ">
+                    <rect key="frame" x="225" y="100" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="8oo-q3-TV9"/>
+                        <constraint firstAttribute="width" constant="200" id="DaR-Uf-WMd"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="LgS-Pc-BR4"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Otz-EX-KX8"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="jkS-q9-Wiw"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="ypO-UK-CMu"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8oo-q3-TV9"/>
+                            <exclude reference="DaR-Uf-WMd"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumBlock" translatesAutoresizingMaskIntoConstraints="NO" id="7oD-TA-2b6">
+                    <rect key="frame" x="225" y="100" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="0Hh-Vc-1zN"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="JLN-Mb-EbS"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="QRc-U7-Idi"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ZCX-jd-bsJ"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="m8Y-Wi-oOi"/>
+                        <constraint firstAttribute="height" constant="200" id="ycl-Ld-JLI"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0Hh-Vc-1zN"/>
+                            <exclude reference="ycl-Ld-JLI"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-oW-Fe0">
+                    <rect key="frame" x="50" y="270" width="500" height="2"/>
+                    <color key="tintColor" red="0.87058823529999996" green="0.78039215689999997" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="V7M-IK-EmE"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="V7M-IK-EmE"/>
+                        </mask>
+                    </variation>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chanel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htd-oH-Y4m">
+                    <rect key="frame" x="269" y="30" width="62" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.81960784313725488" green="0.73333333333333328" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDp-ew-TOw">
+                    <rect key="frame" x="254" y="306" width="91.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.61960784313725492" green="0.55686274509803924" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="singer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz2-Af-ceh">
+                    <rect key="frame" x="276" y="352" width="47" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.81960784313725488" green="0.73333333333333328" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLs-Uz-DIW">
+                    <rect key="frame" x="178" y="502" width="48" height="48"/>
+                    <state key="normal" image="next">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonNextPressed:" destination="-1" eventType="touchUpInside" id="52Z-y6-CkL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbb-rE-VVS">
+                    <rect key="frame" x="374" y="502" width="48" height="48"/>
+                    <state key="normal" image="delete">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonDeletePressed:" destination="-1" eventType="touchUpInside" id="NpV-21-Zbc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5w-sx-Zkk">
+                    <rect key="frame" x="276" y="502" width="48" height="48"/>
+                    <state key="normal" image="heart1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonHeartPressed:" destination="-1" eventType="touchUpInside" id="NNT-VO-KYr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zdp-oW-Fe0" firstAttribute="top" secondItem="7oD-TA-2b6" secondAttribute="bottom" constant="20" id="1XH-ue-tST"/>
+                <constraint firstAttribute="centerX" secondItem="7oD-TA-2b6" secondAttribute="centerX" id="2Zf-oA-GjB"/>
+                <constraint firstItem="zdp-oW-Fe0" firstAttribute="top" secondItem="7oD-TA-2b6" secondAttribute="bottom" constant="60" id="33a-B1-xHm"/>
+                <constraint firstItem="Htd-oH-Y4m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="200" id="36o-M6-yEq"/>
+                <constraint firstItem="kz2-Af-ceh" firstAttribute="top" secondItem="pDp-ew-TOw" secondAttribute="bottom" constant="20" id="3pT-ee-P0J"/>
+                <constraint firstItem="d5w-sx-Zkk" firstAttribute="leading" secondItem="hLs-Uz-DIW" secondAttribute="trailing" constant="50" id="60Q-7x-27r"/>
+                <constraint firstAttribute="centerX" secondItem="d5w-sx-Zkk" secondAttribute="centerX" id="7ys-1A-iLD"/>
+                <constraint firstItem="7oD-TA-2b6" firstAttribute="top" secondItem="Htd-oH-Y4m" secondAttribute="bottom" constant="30" id="9Z8-av-QJc"/>
+                <constraint firstAttribute="centerX" secondItem="kz2-Af-ceh" secondAttribute="centerX" id="C4F-Vx-5Zi"/>
+                <constraint firstAttribute="trailing" secondItem="Htd-oH-Y4m" secondAttribute="trailing" constant="200" id="ClM-su-jNb"/>
+                <constraint firstItem="qlm-om-gmZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="IUC-20-anP"/>
+                <constraint firstItem="qlm-om-gmZ" firstAttribute="top" secondItem="Htd-oH-Y4m" secondAttribute="bottom" constant="30" id="M1c-xR-MuD"/>
+                <constraint firstAttribute="bottom" secondItem="d5w-sx-Zkk" secondAttribute="bottom" constant="10" id="Oey-St-MXa"/>
+                <constraint firstItem="cbb-rE-VVS" firstAttribute="leading" secondItem="d5w-sx-Zkk" secondAttribute="trailing" constant="50" id="Ovx-mk-8XV"/>
+                <constraint firstAttribute="bottom" secondItem="d5w-sx-Zkk" secondAttribute="bottom" constant="50" id="RoW-UA-kDv"/>
+                <constraint firstItem="zdp-oW-Fe0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="TpP-Ed-5SP"/>
+                <constraint firstItem="Htd-oH-Y4m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="UBQ-LM-Irf"/>
+                <constraint firstAttribute="centerX" secondItem="pDp-ew-TOw" secondAttribute="centerX" id="Yab-TY-Q2f"/>
+                <constraint firstAttribute="centerX" secondItem="Htd-oH-Y4m" secondAttribute="centerX" id="Yik-O6-jgp"/>
+                <constraint firstItem="d5w-sx-Zkk" firstAttribute="centerY" secondItem="cbb-rE-VVS" secondAttribute="centerY" id="bNk-Zs-uTb"/>
+                <constraint firstAttribute="bottom" secondItem="cbb-rE-VVS" secondAttribute="bottom" constant="10" id="bh8-5L-bXU"/>
+                <constraint firstAttribute="centerX" secondItem="zdp-oW-Fe0" secondAttribute="centerX" id="dxW-bV-L4I"/>
+                <constraint firstAttribute="centerX" secondItem="qlm-om-gmZ" secondAttribute="centerX" id="hPU-7c-cEg"/>
+                <constraint firstItem="cbb-rE-VVS" firstAttribute="leading" secondItem="d5w-sx-Zkk" secondAttribute="trailing" constant="59" id="ji5-1p-vB6"/>
+                <constraint firstAttribute="trailing" secondItem="zdp-oW-Fe0" secondAttribute="trailing" constant="50" id="kLl-fW-ra4"/>
+                <constraint firstItem="pDp-ew-TOw" firstAttribute="top" secondItem="zdp-oW-Fe0" secondAttribute="bottom" constant="34" id="oeZ-Wd-hJE"/>
+                <constraint firstAttribute="bottom" secondItem="hLs-Uz-DIW" secondAttribute="bottom" constant="10" id="pgx-ah-o8U"/>
+                <constraint firstItem="7oD-TA-2b6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="tSv-Ut-2aN"/>
+                <constraint firstItem="d5w-sx-Zkk" firstAttribute="centerY" secondItem="hLs-Uz-DIW" secondAttribute="centerY" id="vDJ-UB-lGH"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="33a-B1-xHm"/>
+                    <exclude reference="36o-M6-yEq"/>
+                    <exclude reference="ClM-su-jNb"/>
+                    <exclude reference="pgx-ah-o8U"/>
+                    <exclude reference="Oey-St-MXa"/>
+                    <exclude reference="bh8-5L-bXU"/>
+                    <exclude reference="ji5-1p-vB6"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="albumBlock" width="1063" height="1063"/>
+        <image name="delete" width="48" height="48"/>
+        <image name="heart1" width="48" height="48"/>
+        <image name="next" width="48" height="48"/>
+    </resources>
+</document>

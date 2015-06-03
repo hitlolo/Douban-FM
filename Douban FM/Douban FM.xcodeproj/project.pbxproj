@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BA53C25834EF3AB12D99B6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05D349A76B7144687D072FF /* libPods.a */; };
+		CE481AEE1B1EA658006547BE /* FMPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE481AEC1B1EA658006547BE /* FMPlayViewController.m */; };
+		CE481AEF1B1EA658006547BE /* FMPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE481AED1B1EA658006547BE /* FMPlayViewController.xib */; };
+		CEED060B1B1005A2007DEEA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED060A1B1005A2007DEEA5 /* main.m */; };
+		CEED060E1B1005A2007DEEA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED060D1B1005A2007DEEA5 /* AppDelegate.m */; };
+		CEED06141B1005A2007DEEA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED06121B1005A2007DEEA5 /* Main.storyboard */; };
+		CEED06161B1005A2007DEEA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEED06151B1005A2007DEEA5 /* Images.xcassets */; };
+		CEED06191B1005A2007DEEA5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEED06171B1005A2007DEEA5 /* LaunchScreen.xib */; };
+		CEED06251B1005A2007DEEA5 /* Douban_FMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED06241B1005A2007DEEA5 /* Douban_FMTests.m */; };
+		CEED06331B1008B4007DEEA5 /* re_prduct_pan_toggle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEED062F1B1008B4007DEEA5 /* re_prduct_pan_toggle@2x.png */; };
+		CEED06341B1008B4007DEEA5 /* re_product_pan_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEED06301B1008B4007DEEA5 /* re_product_pan_b@2x.png */; };
+		CEED06351B1008B4007DEEA5 /* PGCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED06321B1008B4007DEEA5 /* PGCategoryView.m */; };
+		CEED066F1B1078B0007DEEA5 /* FMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED066E1B1078B0007DEEA5 /* FMRootViewController.m */; };
+		CEED06731B107CB2007DEEA5 /* CDSideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED06721B107CB2007DEEA5 /* CDSideBarController.m */; };
+		CEFE22901B12F15E00CFDDE0 /* FMChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE228F1B12F15E00CFDDE0 /* FMChannelsViewController.m */; };
+		CEFE22941B12F72D00CFDDE0 /* FMChannels.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22931B12F72D00CFDDE0 /* FMChannels.m */; };
+		CEFE22971B13059700CFDDE0 /* FMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22961B13059700CFDDE0 /* FMPlayer.m */; };
+		CEFE229A1B1305E400CFDDE0 /* FMPlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22991B1305E400CFDDE0 /* FMPlayList.m */; };
+		CEFE229D1B1305FA00CFDDE0 /* FMSong.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE229C1B1305FA00CFDDE0 /* FMSong.m */; };
+		CEFE22A01B141DF100CFDDE0 /* FMChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE229F1B141DF100CFDDE0 /* FMChannelInfo.m */; };
+		CEFE22A31B1446CF00CFDDE0 /* FMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22A21B1446CF00CFDDE0 /* FMUser.m */; };
+		CEFE22A71B147A6200CFDDE0 /* FMUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22A51B147A6200CFDDE0 /* FMUserViewController.m */; };
+		CEFE22A81B147A6200CFDDE0 /* FMUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFE22A61B147A6200CFDDE0 /* FMUserViewController.xib */; };
+		CEFE22AC1B14894400CFDDE0 /* FMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22AA1B14894400CFDDE0 /* FMLoginViewController.m */; };
+		CEFE22AD1B14894400CFDDE0 /* FMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFE22AB1B14894400CFDDE0 /* FMLoginViewController.xib */; };
+		CEFE22B01B15919000CFDDE0 /* FMNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22AF1B15919000CFDDE0 /* FMNetWorking.m */; };
+		CEFE22B31B15A2E700CFDDE0 /* FMCaptcha.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE22B21B15A2E700CFDDE0 /* FMCaptcha.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEED061F1B1005A2007DEEA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEED05FD1B1005A2007DEEA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEED06041B1005A2007DEEA5;
+			remoteInfo = "Douban FM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A05D349A76B7144687D072FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E470285D775DDC8AF2C420 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE3DF438DC257B0DCDE708A0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CE481AEB1B1EA658006547BE /* FMPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayViewController.h; sourceTree = "<group>"; };
+		CE481AEC1B1EA658006547BE /* FMPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayViewController.m; sourceTree = "<group>"; };
+		CE481AED1B1EA658006547BE /* FMPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMPlayViewController.xib; sourceTree = "<group>"; };
+		CEED06051B1005A2007DEEA5 /* Douban FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Douban FM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED06091B1005A2007DEEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEED060A1B1005A2007DEEA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEED060C1B1005A2007DEEA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEED060D1B1005A2007DEEA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEED06131B1005A2007DEEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEED06151B1005A2007DEEA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEED06181B1005A2007DEEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CEED061E1B1005A2007DEEA5 /* Douban FMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Douban FMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED06231B1005A2007DEEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEED06241B1005A2007DEEA5 /* Douban_FMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Douban_FMTests.m; sourceTree = "<group>"; };
+		CEED062F1B1008B4007DEEA5 /* re_prduct_pan_toggle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "re_prduct_pan_toggle@2x.png"; sourceTree = "<group>"; };
+		CEED06301B1008B4007DEEA5 /* re_product_pan_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "re_product_pan_b@2x.png"; sourceTree = "<group>"; };
+		CEED06311B1008B4007DEEA5 /* PGCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGCategoryView.h; sourceTree = "<group>"; };
+		CEED06321B1008B4007DEEA5 /* PGCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGCategoryView.m; sourceTree = "<group>"; };
+		CEED066D1B1078B0007DEEA5 /* FMRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRootViewController.h; sourceTree = "<group>"; };
+		CEED066E1B1078B0007DEEA5 /* FMRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRootViewController.m; sourceTree = "<group>"; };
+		CEED06711B107CB2007DEEA5 /* CDSideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSideBarController.h; sourceTree = "<group>"; };
+		CEED06721B107CB2007DEEA5 /* CDSideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSideBarController.m; sourceTree = "<group>"; };
+		CEFE228E1B12F15E00CFDDE0 /* FMChannelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMChannelsViewController.h; sourceTree = "<group>"; };
+		CEFE228F1B12F15E00CFDDE0 /* FMChannelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMChannelsViewController.m; sourceTree = "<group>"; };
+		CEFE22921B12F72D00CFDDE0 /* FMChannels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMChannels.h; sourceTree = "<group>"; };
+		CEFE22931B12F72D00CFDDE0 /* FMChannels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMChannels.m; sourceTree = "<group>"; };
+		CEFE22951B13059700CFDDE0 /* FMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayer.h; sourceTree = "<group>"; };
+		CEFE22961B13059700CFDDE0 /* FMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayer.m; sourceTree = "<group>"; };
+		CEFE22981B1305E400CFDDE0 /* FMPlayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayList.h; sourceTree = "<group>"; };
+		CEFE22991B1305E400CFDDE0 /* FMPlayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayList.m; sourceTree = "<group>"; };
+		CEFE229B1B1305FA00CFDDE0 /* FMSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSong.h; sourceTree = "<group>"; };
+		CEFE229C1B1305FA00CFDDE0 /* FMSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSong.m; sourceTree = "<group>"; };
+		CEFE229E1B141DF100CFDDE0 /* FMChannelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMChannelInfo.h; sourceTree = "<group>"; };
+		CEFE229F1B141DF100CFDDE0 /* FMChannelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMChannelInfo.m; sourceTree = "<group>"; };
+		CEFE22A11B1446CF00CFDDE0 /* FMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUser.h; sourceTree = "<group>"; };
+		CEFE22A21B1446CF00CFDDE0 /* FMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUser.m; sourceTree = "<group>"; };
+		CEFE22A41B147A6200CFDDE0 /* FMUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUserViewController.h; sourceTree = "<group>"; };
+		CEFE22A51B147A6200CFDDE0 /* FMUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUserViewController.m; sourceTree = "<group>"; };
+		CEFE22A61B147A6200CFDDE0 /* FMUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMUserViewController.xib; sourceTree = "<group>"; };
+		CEFE22A91B14894400CFDDE0 /* FMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMLoginViewController.h; sourceTree = "<group>"; };
+		CEFE22AA1B14894400CFDDE0 /* FMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMLoginViewController.m; sourceTree = "<group>"; };
+		CEFE22AB1B14894400CFDDE0 /* FMLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMLoginViewController.xib; sourceTree = "<group>"; };
+		CEFE22AE1B15919000CFDDE0 /* FMNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNetWorking.h; sourceTree = "<group>"; };
+		CEFE22AF1B15919000CFDDE0 /* FMNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNetWorking.m; sourceTree = "<group>"; };
+		CEFE22B11B15A2E700CFDDE0 /* FMCaptcha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCaptcha.h; sourceTree = "<group>"; };
+		CEFE22B21B15A2E700CFDDE0 /* FMCaptcha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCaptcha.m; sourceTree = "<group>"; };
+		CEFE22B41B19923900CFDDE0 /* FMProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEED06021B1005A2007DEEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA53C25834EF3AB12D99B6A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED061B1B1005A2007DEEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78CBDF91E0FCE4B9D589A5C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE3DF438DC257B0DCDE708A0 /* Pods.debug.xcconfig */,
+				B1E470285D775DDC8AF2C420 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97D0A19096FBFB2E30FAA907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05D349A76B7144687D072FF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEED05FC1B1005A2007DEEA5 = {
+			isa = PBXGroup;
+			children = (
+				CEED06071B1005A2007DEEA5 /* Douban FM */,
+				CEED06211B1005A2007DEEA5 /* Douban FMTests */,
+				CEED06061B1005A2007DEEA5 /* Products */,
+				78CBDF91E0FCE4B9D589A5C8 /* Pods */,
+				97D0A19096FBFB2E30FAA907 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEED06061B1005A2007DEEA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEED06051B1005A2007DEEA5 /* Douban FM.app */,
+				CEED061E1B1005A2007DEEA5 /* Douban FMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEED06071B1005A2007DEEA5 /* Douban FM */ = {
+			isa = PBXGroup;
+			children = (
+				CEED06371B100911007DEEA5 /* CDSideBar */,
+				CEED06361B1008C0007DEEA5 /* PGCategory */,
+				CEED060C1B1005A2007DEEA5 /* AppDelegate.h */,
+				CEED060D1B1005A2007DEEA5 /* AppDelegate.m */,
+				CEFE22911B12F70E00CFDDE0 /* model */,
+				CEED06741B117CE6007DEEA5 /* View */,
+				CEED06701B1078F5007DEEA5 /* Controller */,
+				CEED06151B1005A2007DEEA5 /* Images.xcassets */,
+				CEED06081B1005A2007DEEA5 /* Supporting Files */,
+			);
+			path = "Douban FM";
+			sourceTree = "<group>";
+		};
+		CEED06081B1005A2007DEEA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEED06091B1005A2007DEEA5 /* Info.plist */,
+				CEED060A1B1005A2007DEEA5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEED06211B1005A2007DEEA5 /* Douban FMTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEED06241B1005A2007DEEA5 /* Douban_FMTests.m */,
+				CEED06221B1005A2007DEEA5 /* Supporting Files */,
+			);
+			path = "Douban FMTests";
+			sourceTree = "<group>";
+		};
+		CEED06221B1005A2007DEEA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEED06231B1005A2007DEEA5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEED06361B1008C0007DEEA5 /* PGCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CEED062F1B1008B4007DEEA5 /* re_prduct_pan_toggle@2x.png */,
+				CEED06301B1008B4007DEEA5 /* re_product_pan_b@2x.png */,
+				CEED06311B1008B4007DEEA5 /* PGCategoryView.h */,
+				CEED06321B1008B4007DEEA5 /* PGCategoryView.m */,
+			);
+			name = PGCategory;
+			sourceTree = "<group>";
+		};
+		CEED06371B100911007DEEA5 /* CDSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				CEED06711B107CB2007DEEA5 /* CDSideBarController.h */,
+				CEED06721B107CB2007DEEA5 /* CDSideBarController.m */,
+			);
+			name = CDSideBar;
+			sourceTree = "<group>";
+		};
+		CEED06701B1078F5007DEEA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE481AEB1B1EA658006547BE /* FMPlayViewController.h */,
+				CE481AEC1B1EA658006547BE /* FMPlayViewController.m */,
+				CE481AED1B1EA658006547BE /* FMPlayViewController.xib */,
+				CEFE22A41B147A6200CFDDE0 /* FMUserViewController.h */,
+				CEFE22A51B147A6200CFDDE0 /* FMUserViewController.m */,
+				CEFE22A61B147A6200CFDDE0 /* FMUserViewController.xib */,
+				CEFE22A91B14894400CFDDE0 /* FMLoginViewController.h */,
+				CEFE22AA1B14894400CFDDE0 /* FMLoginViewController.m */,
+				CEFE22AB1B14894400CFDDE0 /* FMLoginViewController.xib */,
+				CEFE228E1B12F15E00CFDDE0 /* FMChannelsViewController.h */,
+				CEFE228F1B12F15E00CFDDE0 /* FMChannelsViewController.m */,
+				CEED066D1B1078B0007DEEA5 /* FMRootViewController.h */,
+				CEED066E1B1078B0007DEEA5 /* FMRootViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CEED06741B117CE6007DEEA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEED06121B1005A2007DEEA5 /* Main.storyboard */,
+				CEED06171B1005A2007DEEA5 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CEFE22911B12F70E00CFDDE0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFE22951B13059700CFDDE0 /* FMPlayer.h */,
+				CEFE22961B13059700CFDDE0 /* FMPlayer.m */,
+				CEFE22AE1B15919000CFDDE0 /* FMNetWorking.h */,
+				CEFE22AF1B15919000CFDDE0 /* FMNetWorking.m */,
+				CEFE22B11B15A2E700CFDDE0 /* FMCaptcha.h */,
+				CEFE22B21B15A2E700CFDDE0 /* FMCaptcha.m */,
+				CEFE229E1B141DF100CFDDE0 /* FMChannelInfo.h */,
+				CEFE229F1B141DF100CFDDE0 /* FMChannelInfo.m */,
+				CEFE22921B12F72D00CFDDE0 /* FMChannels.h */,
+				CEFE22931B12F72D00CFDDE0 /* FMChannels.m */,
+				CEFE22B41B19923900CFDDE0 /* FMProtocol.h */,
+				CEFE22A11B1446CF00CFDDE0 /* FMUser.h */,
+				CEFE22A21B1446CF00CFDDE0 /* FMUser.m */,
+				CEFE22981B1305E400CFDDE0 /* FMPlayList.h */,
+				CEFE22991B1305E400CFDDE0 /* FMPlayList.m */,
+				CEFE229B1B1305FA00CFDDE0 /* FMSong.h */,
+				CEFE229C1B1305FA00CFDDE0 /* FMSong.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEED06041B1005A2007DEEA5 /* Douban FM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEED06281B1005A2007DEEA5 /* Build configuration list for PBXNativeTarget "Douban FM" */;
+			buildPhases = (
+				3DBC5E0C5BAB34A364915F4D /* Check Pods Manifest.lock */,
+				CEED06011B1005A2007DEEA5 /* Sources */,
+				CEED06021B1005A2007DEEA5 /* Frameworks */,
+				CEED06031B1005A2007DEEA5 /* Resources */,
+				746CFC8E8AAE35B196F74B9D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Douban FM";
+			productName = "Douban FM";
+			productReference = CEED06051B1005A2007DEEA5 /* Douban FM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEED061D1B1005A2007DEEA5 /* Douban FMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEED062B1B1005A2007DEEA5 /* Build configuration list for PBXNativeTarget "Douban FMTests" */;
+			buildPhases = (
+				CEED061A1B1005A2007DEEA5 /* Sources */,
+				CEED061B1B1005A2007DEEA5 /* Frameworks */,
+				CEED061C1B1005A2007DEEA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEED06201B1005A2007DEEA5 /* PBXTargetDependency */,
+			);
+			name = "Douban FMTests";
+			productName = "Douban FMTests";
+			productReference = CEED061E1B1005A2007DEEA5 /* Douban FMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEED05FD1B1005A2007DEEA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FM;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Lolo;
+				TargetAttributes = {
+					CEED06041B1005A2007DEEA5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7ZNW38AMJF;
+					};
+					CEED061D1B1005A2007DEEA5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = CEED06041B1005A2007DEEA5;
+					};
+				};
+			};
+			buildConfigurationList = CEED06001B1005A2007DEEA5 /* Build configuration list for PBXProject "Douban FM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEED05FC1B1005A2007DEEA5;
+			productRefGroup = CEED06061B1005A2007DEEA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEED06041B1005A2007DEEA5 /* Douban FM */,
+				CEED061D1B1005A2007DEEA5 /* Douban FMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEED06031B1005A2007DEEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEED06141B1005A2007DEEA5 /* Main.storyboard in Resources */,
+				CEED06191B1005A2007DEEA5 /* LaunchScreen.xib in Resources */,
+				CEFE22A81B147A6200CFDDE0 /* FMUserViewController.xib in Resources */,
+				CEED06161B1005A2007DEEA5 /* Images.xcassets in Resources */,
+				CE481AEF1B1EA658006547BE /* FMPlayViewController.xib in Resources */,
+				CEFE22AD1B14894400CFDDE0 /* FMLoginViewController.xib in Resources */,
+				CEED06331B1008B4007DEEA5 /* re_prduct_pan_toggle@2x.png in Resources */,
+				CEED06341B1008B4007DEEA5 /* re_product_pan_b@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED061C1B1005A2007DEEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DBC5E0C5BAB34A364915F4D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		746CFC8E8AAE35B196F74B9D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEED06011B1005A2007DEEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEED066F1B1078B0007DEEA5 /* FMRootViewController.m in Sources */,
+				CEFE22A71B147A6200CFDDE0 /* FMUserViewController.m in Sources */,
+				CEFE229D1B1305FA00CFDDE0 /* FMSong.m in Sources */,
+				CEFE22AC1B14894400CFDDE0 /* FMLoginViewController.m in Sources */,
+				CEFE22B01B15919000CFDDE0 /* FMNetWorking.m in Sources */,
+				CEED060E1B1005A2007DEEA5 /* AppDelegate.m in Sources */,
+				CEFE22901B12F15E00CFDDE0 /* FMChannelsViewController.m in Sources */,
+				CEFE22A31B1446CF00CFDDE0 /* FMUser.m in Sources */,
+				CEED06731B107CB2007DEEA5 /* CDSideBarController.m in Sources */,
+				CEFE22971B13059700CFDDE0 /* FMPlayer.m in Sources */,
+				CEFE229A1B1305E400CFDDE0 /* FMPlayList.m in Sources */,
+				CEED060B1B1005A2007DEEA5 /* main.m in Sources */,
+				CEFE22B31B15A2E700CFDDE0 /* FMCaptcha.m in Sources */,
+				CEFE22941B12F72D00CFDDE0 /* FMChannels.m in Sources */,
+				CE481AEE1B1EA658006547BE /* FMPlayViewController.m in Sources */,
+				CEFE22A01B141DF100CFDDE0 /* FMChannelInfo.m in Sources */,
+				CEED06351B1008B4007DEEA5 /* PGCategoryView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED061A1B1005A2007DEEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEED06251B1005A2007DEEA5 /* Douban_FMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEED06201B1005A2007DEEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEED06041B1005A2007DEEA5 /* Douban FM */;
+			targetProxy = CEED061F1B1005A2007DEEA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEED06121B1005A2007DEEA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEED06131B1005A2007DEEA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEED06171B1005A2007DEEA5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEED06181B1005A2007DEEA5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEED06261B1005A2007DEEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEED06271B1005A2007DEEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEED06291B1005A2007DEEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3DF438DC257B0DCDE708A0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Douban FM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CEED062A1B1005A2007DEEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E470285D775DDC8AF2C420 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Douban FM/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		CEED062C1B1005A2007DEEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Douban FMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Douban FM.app/Douban FM";
+			};
+			name = Debug;
+		};
+		CEED062D1B1005A2007DEEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Douban FMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Douban FM.app/Douban FM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEED06001B1005A2007DEEA5 /* Build configuration list for PBXProject "Douban FM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEED06261B1005A2007DEEA5 /* Debug */,
+				CEED06271B1005A2007DEEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEED06281B1005A2007DEEA5 /* Build configuration list for PBXNativeTarget "Douban FM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEED06291B1005A2007DEEA5 /* Debug */,
+				CEED062A1B1005A2007DEEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEED062B1B1005A2007DEEA5 /* Build configuration list for PBXNativeTarget "Douban FMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEED062C1B1005A2007DEEA5 /* Debug */,
+				CEED062D1B1005A2007DEEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEED05FD1B1005A2007DEEA5 /* Project object */;
+}
